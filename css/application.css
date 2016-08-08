@@ -1,0 +1,360 @@
+.port-title, .wrapper2 h4, .col2 li, .container1, .main-footer, .main-nav li {
+  text-align: center; }
+
+/*************************************************
+Main CSS Layout
+*************************************************/
+* {
+  box-sizing: border-box; }
+
+body {
+  font-size: .90em;
+  color: #555555;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5em; }
+  @media (min-width: 1024px) {
+    body {
+      background-color: #f2f2f2; } }
+
+a:link {
+  text-decoration: none; }
+
+.main-nav a:hover,
+.foot-nav a:hover,
+a:hover {
+  color: green; }
+
+/*************************************************
+Fix
+*************************************************/
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both; }
+
+.profile-pic {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto; }
+
+.background-pic {
+  display: block;
+  background-color: #ddd;
+  max-width: 220px;
+  max-height: 170px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto 20px; }
+  @media (min-width: 768px) {
+    .background-pic {
+      display: block;
+      background-color: #ddd;
+      min-width: 300px;
+      min-height: 170px;
+      margin: 0 auto;
+      padding-top: 15px; } }
+  @media (min-width: 1024px) {
+    .background-pic {
+      display: block;
+      background-color: #ddd;
+      min-width: 300px;
+      min-height: 170px;
+      margin: 0 auto;
+      padding-top: 15px; } }
+
+/*************************************************
+Section Layout
+*************************************************/
+.portfolio {
+  width: 95%;
+  margin: 0 auto; }
+  @media (min-width: 1024px) {
+    .portfolio {
+      background-color: #fff;
+      padding-top: 20px; } }
+
+.pic {
+  width: 290px;
+  margin-top: 10px;
+  margin-bottom: 5px; }
+  @media (min-width: 768px) {
+    .pic {
+      width: 350px; } }
+  @media (min-width: 1024px) {
+    .pic {
+      display: block;
+      margin: 0 auto;
+      width: 300px; } }
+
+.port-title {
+  margin-top: 50px;
+  margin-bottom: 30px; }
+
+h3 {
+  font-weight: normal;
+  font-size: 1.30em; }
+
+.col p {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 30px; }
+
+/*************************************************
+Skills Layout
+*************************************************/
+@media (min-width: 768px) {
+  .skill-flex {
+    display: flex;
+    flex-direction: column;
+    width: 45%; } }
+@media (min-width: 1024px) {
+  .skill-flex {
+    width: 45%; } }
+
+.skill-wrap {
+  display: flex; }
+
+.skills {
+  width: 95%;
+  margin: 0 auto; }
+
+.wrapper2 h4 {
+  padding-top: 20px; }
+
+.col2 {
+  width: 40%;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .col2 {
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between; } }
+
+.col2 ul {
+  padding-left: 0; }
+
+.col2 li {
+  border: 1px solid black;
+  border-radius: 10px;
+  background: #0c61ba;
+  margin-top: 10px;
+  list-style: none;
+  color: #fff; }
+
+.col2 li:nth-child(even) {
+  background: #faa120; }
+
+.intro {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 60px; }
+  @media (min-width: 768px) {
+    .intro {
+      display: flex;
+      flex-direction: row-reverse;
+      text-align: left;
+      font-size: 17px; } }
+  @media (min-width: 1024px) {
+    .intro {
+      margin: 0 auto; } }
+
+@media (min-width: 768px) {
+  .intro p {
+    padding-top: 12px;
+    line-height: 1.5em;
+    padding-right: 20px;
+    margin-top: 0; } }
+@media (min-width: 1024px) {
+  .intro p {
+    font-size: 1.25rem;
+    padding-right: 30px;
+    margin-top: 0; } }
+
+.container1 {
+  width: 100%;
+  margin: 0 auto; }
+  @media (min-width: 1024px) {
+    .container1 {
+      width: 100%; } }
+
+.col {
+  text-align: center; }
+  @media (min-width: 768px) {
+    .col {
+      float: left;
+      width: 50%; } }
+  @media (min-width: 1024px) {
+    .col {
+      width: 33%; } }
+  @media (min-width: 768px) {
+    .col p {
+      line-height: 1.5em;
+      width: 74%; } }
+  @media (min-width: 1024px) {
+    .col p {
+      line-height: 1.3em;
+      width: 84%; } }
+
+@media (min-width: 768px) {
+  .col:nth-child(3) {
+    clear: left; } }
+@media (min-width: 1024px) {
+  .col:nth-child(3) {
+    clear: none; } }
+
+@media (min-width: 1024px) {
+  .col:nth-child(4) {
+    clear: left; } }
+
+/*************************************************
+Footer Layout
+*************************************************/
+footer {
+  background-color: #f2f2f2;
+  margin-top: 100px; }
+
+.main-footer {
+  padding-top: 40px;
+  width: 90%;
+  margin: -40px auto 0; }
+  @media (min-width: 768px) {
+    .main-footer p {
+      font-size: 1.30em; } }
+  @media (min-width: 1024px) {
+    .main-footer p {
+      width: 70%;
+      margin: 0 auto 30px;
+      font-size: 1.20em; } }
+  @media (min-width: 768px) {
+    .main-footer {
+      margin-top: -60px;
+      width: 70%;
+      line-height: 1.5em; } }
+
+@media (max-width: 767px) {
+  .foot-nav {
+    display: none; } }
+@media (min-width: 768px) {
+  .foot-nav {
+    display: inline;
+    padding-top: 10px;
+    margin-bottom: 40px; } }
+@media (min-width: 1024px) {
+  .foot-nav {
+    margin-bottom: 10px; } }
+@media (min-width: 768px) {
+  .foot-nav li {
+    display: inline;
+    background-color: #f2f2f2;
+    padding: 10px; } }
+@media (min-width: 768px) {
+  .foot-nav a {
+    text-decoration: none;
+    color: #555555;
+    font-weight: bold;
+    font-size: .85rem; } }
+
+.contact {
+  margin-bottom: 30px; }
+
+.info {
+  padding-top: 10px;
+  padding-bottom: 40px; }
+
+.mail,
+.phone {
+  display: inline-block;
+  padding: 10px; }
+  @media (min-width: 768px) {
+    .mail,
+    .phone {
+      font-size: 20px; } }
+
+.number {
+  text-decoration: none;
+  color: #555555;
+  font-weight: bold; }
+  @media (min-width: 768px) {
+    .number {
+      font-size: 20px; } }
+
+.bottom {
+  border-top: 1px dotted #ccc;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; }
+  @media (min-width: 768px) {
+    .bottom {
+      padding-bottom: 20px; } }
+  @media (min-width: 1024px) {
+    .bottom {
+      margin-top: 40px; } }
+
+.to-top {
+  text-decoration: none;
+  color: #555555; }
+  @media (min-width: 768px) {
+    .to-top {
+      display: none; } }
+
+.footer-nav {
+  display: none; }
+
+/*************************************************
+Header Layout
+*************************************************/
+.main-header {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 20px 20px 40px 20px; }
+
+h1 {
+  margin-top: 0; }
+
+@media (min-width: 768px) {
+  .main-nav {
+    padding-top: 10px;
+    margin-bottom: 40px; } }
+
+.main-nav ul {
+  padding-left: 0; }
+
+.main-nav li {
+  list-style: none;
+  background-color: #fff;
+  padding: 10px 0;
+  margin-top: 5px; }
+  @media (min-width: 768px) {
+    .main-nav li {
+      display: inline;
+      background-color: #f2f2f2;
+      padding: 20px; } }
+
+.main-nav a {
+  text-decoration: none;
+  color: #555555;
+  font-weight: bold;
+  display: block; }
+  @media (min-width: 768px) {
+    .main-nav a {
+      display: inline; } }
+
+/*************************************************
+GALLERY PAGE  
+*************************************************/
+.main-footer2 {
+  background-color: #f2f2f2;
+  height: 100px;
+  width: 100%; }
+
+@media (min-width: 1024px) {
+  .container2 {
+    display: flex;
+    justify-content: space-between; }
+    .container2 h1 {
+      margin: 20px 0 0 30px; } }
+
+/*# sourceMappingURL=application.css.map */

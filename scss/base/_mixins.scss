@@ -1,0 +1,8 @@
+@mixin marpad ($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
+} 
+
+@mixin width ($width) {
+  width: $width;
+}

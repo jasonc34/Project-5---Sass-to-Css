@@ -1,0 +1,13 @@
+/*************************************************
+Header Layout
+*************************************************/
+
+.main-header  {
+  background-color: $primary-color;
+  @include width (100%);
+  padding: 20px 20px 40px 20px;
+}
+
+h1  {
+  margin-top: 0;
+}

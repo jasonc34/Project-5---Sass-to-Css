@@ -1,0 +1,66 @@
+
+
+.profile-pic  {
+  border-radius: 50%;
+  display: block;
+  margin: $auto-margin;
+
+}
+
+.background-pic {
+  display: block;
+  background-color: $profile-color;
+  max-width: 220px;
+  max-height: 170px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: $auto-margin 20px;
+  
+  @media #{$brk-narrow} {
+    display: block;
+    background-color: #ddd;
+    min-width: 300px;
+    min-height: 170px;
+    margin: $auto-margin;
+    padding-top: 15px;
+  }
+
+  @media #{$brk-wide} {
+    display: block;
+    background-color: #ddd;
+    min-width: 300px;
+    min-height: 170px;
+    margin: $auto-margin;
+    padding-top: 15px;
+  }
+}
+
+/*************************************************
+Section Layout
+*************************************************/
+
+.portfolio  {
+  @include width (95%);
+  margin: $auto-margin;
+  
+  @media #{$brk-wide} {
+    background-color: #fff;
+    padding-top: 20px;
+  }  
+}
+
+.pic  {
+  @include width (290px);
+  margin-top: 10px;
+  margin-bottom: 5px;
+  
+  @media #{$brk-narrow} {
+    @include width (350px);
+  }
+
+   @media #{$brk-wide} {
+    display: block;
+    margin: $auto-margin;
+    @include width (300px);
+  }
+}

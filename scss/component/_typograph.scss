@@ -1,0 +1,18 @@
+
+.port-title  {
+  @extend %centered;
+  margin-top: 50px;
+  margin-bottom: 30px;
+
+}
+
+h3  {
+  font-weight: normal;
+  font-size: 1.30em;
+}
+
+.col p  {
+  @include width (90%);
+  margin: $auto-margin;
+  margin-bottom: 30px;
+}

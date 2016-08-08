@@ -1,0 +1,21 @@
+/*************************************************
+GALLERY PAGE  
+*************************************************/
+
+.main-footer2  {
+  background-color: $primary-color;
+  height: 100px;
+  @include width (100%);
+
+}
+
+.container2 {
+  @media #{$brk-wide} {
+    display: flex;
+    justify-content: space-between;
+  
+    h1  {
+      margin: 20px 0 0 30px;
+    }
+  }
+}

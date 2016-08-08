@@ -1,0 +1,121 @@
+/*************************************************
+Footer Layout
+*************************************************/
+
+footer  {
+  background-color: $primary-color;
+  margin-top: 100px;
+}
+
+.main-footer  {
+  @extend %centered;
+  padding-top: 40px;
+  @include width (90%);
+  margin: -40px auto 0;
+  
+  p {
+    @media #{$brk-narrow} {
+     font-size: 1.30em;
+    }
+    @media #{$brk-wide} {
+      @include width (70%);
+      margin: $auto-margin 30px;
+      font-size: 1.20em;
+    }
+  }
+  
+  @media #{$brk-narrow} {
+    margin-top: -60px;
+    @include width (70%);
+    line-height: 1.5em;
+  }
+}
+
+.foot-nav {
+  @media #{$brk-tiny}  {
+    display: none;
+  }
+
+  @media #{$brk-narrow} {
+    display: inline;
+    padding-top: 10px;
+    margin-bottom: 40px;
+  }
+  @media #{$brk-wide} {
+    margin-bottom: 10px;
+  }
+  li  {
+    @media #{$brk-narrow} {
+      display: inline;  
+      background-color: $primary-color;
+      padding: 10px;
+    }
+  }
+  a {
+    @media #{$brk-narrow} {
+    text-decoration: none;
+    color: $font-color;
+    font-weight: bold;
+    font-size: .85rem;
+  }
+  }
+}
+
+.contact {
+  margin-bottom: 30px;
+}
+
+.info {
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.mail,
+.phone  {
+  display: inline-block;
+  padding:10px;
+  
+  @media #{$brk-narrow} {
+    font-size: 20px;
+  }
+}
+
+.number {
+  text-decoration: none;
+  color: $font-color;
+  font-weight: bold;
+  
+  @media #{$brk-narrow} {
+    font-size: 20px;
+  }
+}
+
+
+.bottom {
+  border-top: 1px dotted #ccc;
+  @include width (90%);
+  margin: $auto-margin;
+  display: flex;
+  justify-content: space-between;
+  
+   @media #{$brk-narrow} {
+    padding-bottom: 20px;
+  }
+
+  @media #{$brk-wide} {
+     margin-top: 40px;
+  }
+}
+
+.to-top {
+  text-decoration: none;
+  color: $font-color;
+  
+  @media #{$brk-narrow} {
+    display: none;
+  }
+}
+
+.footer-nav {
+  display: none;
+}

@@ -1,0 +1,58 @@
+/*************************************************
+Skills Layout
+*************************************************/
+.skill-flex {
+  @media #{$brk-narrow} {
+    display: flex;
+    flex-direction: column;
+    @include width (45%);
+  }
+
+  @media #{$brk-wide} {
+    @include width (45%);
+  }
+}
+
+.skill-wrap {
+  display: flex;
+}
+
+.skills {
+  @include width (95%);
+  margin: $auto-margin;
+}
+
+.wrapper2 h4  {
+  @extend %centered;
+  padding-top: 20px;
+}
+
+.col2 {
+  @include width (40%);
+  margin: $auto-margin;
+  
+
+  @media #{$brk-narrow} {
+    margin: $auto-margin;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.col2 ul  {
+  padding-left: 0;
+}
+
+.col2 li  {
+  border: 1px solid black;
+  border-radius: 10px;
+  @extend %centered;
+  background: darken($skill-color2, 20%);
+  margin-top: 10px;
+  list-style: none;
+  color: #fff;
+}
+
+.col2 li:nth-child(even) {
+  background: lighten($skill-color1, 1%);
+}

@@ -1,0 +1,40 @@
+/*************************************************
+Main CSS Layout
+*************************************************/
+
+* {
+  box-sizing: border-box;
+}
+
+body  {
+  font-size: .90em;
+  color: $font-color;
+  @include marpad (0,0);
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5em;
+  
+  @media #{$brk-wide} {
+    background-color: $primary-color;
+  }
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+.main-nav a:hover,
+.foot-nav a:hover,
+a:hover  {
+  color: green;
+}
+
+/*************************************************
+Fix
+*************************************************/
+
+.clearfix:after {
+    content:" ";
+    display:table;
+    clear:both;
+}
